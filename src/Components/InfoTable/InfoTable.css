@@ -1,0 +1,23 @@
+.infoTableContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+}
+
+.textOutput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
