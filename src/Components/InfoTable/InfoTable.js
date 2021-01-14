@@ -29,6 +29,7 @@ class infoTable extends Component {
        console.log(this.state.FirstName)
        console.log(this.state.LastName)
        console.log(this.state.PhoneNumber)
+       
     }
 
 
@@ -36,9 +37,9 @@ class infoTable extends Component {
         return (
             <>
                 <div className='infoTableContainer'>                          
-                    <label>First Name: <input className='FirstName' onInput={this.inputChange} value={this.state.FirstName} /> </label>
-                    <label>Last Name: <input className='LastName' onInput={this.inputChange} value={this.state.LastName} />   </label>
-                    <label>Phone #: <input className='PhoneNumber' onInput={this.inputChange} value={this.state.PhoneNumber} /></label>
+                    <label>First Name: <input className='FirstName' placeholder="Coder" onInput={this.inputChange} value={this.state.FirstName} /> </label>
+                    <label>Last Name: <input className='LastName' placeholder="Byte" onInput={this.inputChange} value={this.state.LastName} />   </label>
+                    <label>Phone #: <input className='PhoneNumber' placeholder="8885559999" onInput={this.inputChange} value={this.state.PhoneNumber} /></label>
                     <button className='submitButton' onClick={this.submit}> Submit </button>                    
                 </div>
                 <div className='textOutput'>    
