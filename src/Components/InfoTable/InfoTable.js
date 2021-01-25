@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import './InfoTable.css'
 
 
+var str = ''
 
 class infoTable extends Component {
     
     constructor(props) {
         super(props)
         this.state = {
-            showOutPut: true,
+            list: [],
         }
     }
     inputChange = (event) => {
@@ -28,10 +29,8 @@ class infoTable extends Component {
         const FirstName = this.state.FirstName;
        console.log(this.state.FirstName)
        console.log(this.state.LastName)
-       console.log(this.state.PhoneNumber)
-       
+       console.log(this.state.PhoneNumber)       
     }
-
 
     render = () => {
         return (
@@ -49,11 +48,12 @@ class infoTable extends Component {
                     </div>     
                     <div className='col'> 
                     <h1>  Last Name </h1> 
-                    {this.state.savedLastName} 
+                    {str =   this.state.savedLastName} 
                     </div> 
                     <div className='col'> 
                     <h1>  Phone Number </h1> 
                     {this.state.savedPhoneNumber}
+                    
                     </div> 
                 </div>
 
